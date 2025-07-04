@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './register.css';
 
 function Register() {
@@ -11,6 +12,9 @@ function Register() {
                 <input type="password" placeholder="Confirmer le mot de passe" required />
                 <button type="submit">S'inscrire</button>
             </form>
+            <p className="auth-redirect">
+                Déjà un compte ? <Link to="/login">Se connecter</Link>
+            </p>
         </div>
     );
 }

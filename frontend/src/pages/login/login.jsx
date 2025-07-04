@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './login.css';
 
 function Login() {
@@ -9,6 +10,9 @@ function Login() {
                 <input type="password" placeholder="Mot de passe" required />
                 <button type="submit">Se connecter</button>
             </form>
+            <p className="auth-redirect">
+                Pas encore de compte ? <Link to="/register">S'inscrire</Link>
+            </p>
         </div>
     );
 }
